@@ -92,3 +92,8 @@ def edit_contact():
                         if item != result[conf_num]:
                             rewrite_file.write(item + "\n\n")
                 enter_data()
+
+
+def print_data():
+    with open('book.txt', 'r', encoding='utf-8') as file:
+        print(file.read())
